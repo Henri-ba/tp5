@@ -3,6 +3,7 @@ package structures;
 import java.util.ArrayList;
 import java.util.List;
 import exceptions.ConstructeurException;
+import utilitaires.MathUtilitaires;
 
 /**
  * Classe qui permet de produire une liste de listes de combinaison d'entiers
@@ -138,7 +139,11 @@ public class ListeCombinatoire
 	// TODO genererEnsembleValeurs - Compléter le code de la méthode
 	public List<Integer> genererEnsembleValeurs()
 	{
-		return null;
+		List<Integer> listVal = new ArrayList<>();
+        for(int i = debutEns; i < finEns; i++){
+            listVal.add(i);
+        }
+        return listVal;
 	}
 
 	/**
@@ -158,7 +163,7 @@ public class ListeCombinatoire
 	private void produireListeCombinaisons(List<Integer> pEnsembleValeurs,
 			int pLongueurRestante, List<Integer> pCombinaisonCourante)
 	{
-		
+
 	}
 
 	/**
